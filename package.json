@@ -22,7 +22,10 @@
     "build": "react-scripts build",
     "serve": "serve -s build",
     "test": "react-scripts test",
+    "test:coverage:all": "npm run test -- --coverage --watchAll",
     "test:coverage": "npm run test -- --coverage",
+    "test:all": "npm run test -- --coverage",
+    "test:ci": "npm run test -- --watchAll=false --coverage --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
