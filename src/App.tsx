@@ -1,7 +1,6 @@
 import React from "react";
+import Router from "./components/Router";
 
-function App() {
-  return <h1 className="text-slate-100 text-3xl">Hello world!</h1>;
-}
+const App: React.FC = () => <Router />;
 
 export default App;
