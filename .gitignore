@@ -154,3 +154,6 @@ yarn-error.log*
 
 # JetBrains - Fleet
 .fleet/
+
+# vscode
+.vscode/
