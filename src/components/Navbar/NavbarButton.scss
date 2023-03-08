@@ -1,0 +1,9 @@
+@import "../../styles/helpers.scss";
+
+.navbar-item {
+  :hover {
+    font-weight: 700;
+    color: $black-pearl;
+    background-color: $coral-candy;
+  }
+}

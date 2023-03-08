@@ -1,7 +1,17 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./components/Router";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar/Navbar";
 
-function App() {
-  return <h1 className="text-slate-100 text-3xl">Hello world!</h1>;
-}
+const App: React.FC = () => (
+  <div className="container">
+    <BrowserRouter>
+      <Header />
+      <Navbar />
+      <Router />
+    </BrowserRouter>
+  </div>
+);
 
 export default App;
