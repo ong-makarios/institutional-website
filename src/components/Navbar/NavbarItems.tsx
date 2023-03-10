@@ -9,7 +9,11 @@ const NavbarItems: React.FC = () => {
     <div className="collapse navbar-collapse" id="main-navbar">
       <ul className="navbar-nav">
         {buttons.map((button) => (
-          <NavbarButton name={button.name} path={button.path} />
+          <NavbarButton
+            name={button.name}
+            path={button.path}
+            key={button.name}
+          />
         ))}
       </ul>
     </div>
