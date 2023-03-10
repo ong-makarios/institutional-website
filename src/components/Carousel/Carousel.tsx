@@ -1,6 +1,8 @@
 import React from "react";
+import { CarouselProps } from "../../types/props";
+import CarouselSlide from "./CarouselSlide";
 
-const Carousel: React.FC = () => {
+const Carousel: React.FC<CarouselProps> = ({ images }) => {
   return (
     <div
       id="carousel"
@@ -25,20 +27,14 @@ const Carousel: React.FC = () => {
         ></button>
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img
-            src="/images/home/carousel/carousel_1.png"
-            className="d-block w-100"
-            alt="..."
+        {images.map((image) => (
+          <CarouselSlide
+            src={image.src}
+            alt={image.alt}
+            active={image.active}
+            key={image.src}
           />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="/images/home/carousel/carousel_2.png"
-            className="d-block w-100"
-            alt="..."
-          />
-        </div>
+        ))}
       </div>
       <button
         className="carousel-control-prev"
