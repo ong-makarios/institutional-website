@@ -25,6 +25,6 @@ describe("Carousel", () => {
   it("should render images passed in props", () => {
     render(<Carousel images={mockImages} />);
 
-    expect(screen.getAllByRole("img")).toHaveLength(2);
+    expect(screen.getAllByRole("img")).toHaveLength(mockImages.length);
   });
 });

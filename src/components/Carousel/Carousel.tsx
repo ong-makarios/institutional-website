@@ -1,5 +1,6 @@
 import React from "react";
 import { CarouselProps } from "../../types/props";
+import CarouselIndicator from "./CarouselIndicator";
 import CarouselSlide from "./CarouselSlide";
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
@@ -11,20 +12,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       role="banner"
     >
       <div className="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide-to="0"
-          className="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
+        {images.map((image, index) => (
+          <CarouselIndicator
+            index={index.toString()}
+            target="#target"
+            active={index === 0 ? true : false}
+          />
+        ))}
       </div>
       <div className="carousel-inner">
         {images.map((image) => (
