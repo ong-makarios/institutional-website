@@ -16,3 +16,8 @@ export type CarouselIndicatorProps = {
   index: string;
   active?: boolean;
 };
+
+export type CarouselControlProps = {
+  type: "next" | "prev";
+  target: string;
+};
