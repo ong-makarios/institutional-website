@@ -16,7 +16,8 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           <CarouselIndicator
             index={index.toString()}
             target="#target"
-            active={index === 0 ? true : false}
+            active={index === 0}
+            key={index}
           />
         ))}
       </div>
