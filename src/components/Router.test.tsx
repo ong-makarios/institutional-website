@@ -12,7 +12,7 @@ describe("Router", () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText(/home/i)).toBeInTheDocument();
+    expect(screen.getByTestId("section-home")).toBeInTheDocument();
   });
 
   it("should render not found page when route equals to a non mapped one", () => {
