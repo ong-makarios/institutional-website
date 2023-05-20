@@ -1,8 +1,19 @@
+import MatchMediaMock from "jest-matchmedia-mock";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Router from "./Router";
 
 describe("Router", () => {
+  let matchMedia: MatchMediaMock;
+
+  beforeAll(() => {
+    matchMedia = new MatchMediaMock();
+  });
+
+  afterEach(() => {
+    matchMedia.clear();
+  });
+
   it("should render home when route equals to /", () => {
     const homeRoute: string = "/";
 
