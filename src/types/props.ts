@@ -1,4 +1,6 @@
+import { Settings } from "react-slick";
 import { CarouselImage } from "./carousel";
+import { Slide } from "./slider";
 
 export type NavbarButtonProps = {
   name: string;
@@ -20,4 +22,9 @@ export type CarouselIndicatorProps = {
 export type CarouselControlProps = {
   type: "next" | "prev";
   target: string;
+};
+
+export type SliderProps = {
+  slides: Array<Slide>;
+  customSettings?: Settings;
 };
