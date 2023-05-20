@@ -10,12 +10,12 @@ import SectionTitle from "../components/SectionTitle/SectionTitle";
 const Home: React.FC = () => {
   const carouselImages: Array<CarouselSlideProps> = [
     {
-      src: "/images/home/carousel/carousel_1.png",
+      src: "https://via.placeholder.com/1116x558",
       alt: "Volunteers packing donations",
       active: true,
     },
     {
-      src: "/images/home/carousel/carousel_2.png",
+      src: "https://via.placeholder.com/1116x558",
       alt: "A workshop being given",
       active: false,
     },
