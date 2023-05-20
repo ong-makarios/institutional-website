@@ -5,6 +5,7 @@ import { CarouselSlideProps } from "../types/props";
 import Slider from "../components/Slider/Slider";
 import { Slide } from "../types/slider";
 import { Settings } from "react-slick";
+import SectionTitle from "../components/SectionTitle/SectionTitle";
 
 const Home: React.FC = () => {
   const carouselImages: Array<CarouselSlideProps> = [
@@ -71,6 +72,7 @@ const Home: React.FC = () => {
   return (
     <section data-testid="section-home">
       <Carousel images={carouselImages} />
+      <SectionTitle title="Projetos" />
       <Slider slides={slides} customSettings={projectsSliderSettings} />
     </section>
   );

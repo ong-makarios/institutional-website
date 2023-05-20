@@ -28,3 +28,7 @@ export type SliderProps = {
   slides: Array<Slide>;
   customSettings?: Settings;
 };
+
+export type SectionTitleProps = {
+  title: string;
+};
