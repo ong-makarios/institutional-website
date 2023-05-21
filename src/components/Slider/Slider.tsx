@@ -14,7 +14,7 @@ const Slider: React.FC<SliderProps> = ({ slides, customSettings }) => {
       {slides.map((slide, index) => (
         <div key={slide.title} data-testid={`slide-${index}`}>
           <img src={slide.image} alt={slide.title} />
-          <h2>{slide.title}</h2>
+          <h4>{slide.title}</h4>
           <p>{slide.content}</p>
           <a href={slide.readMoreLink}>Leia mais</a>
         </div>

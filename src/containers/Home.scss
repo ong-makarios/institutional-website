@@ -1,5 +1,28 @@
+@import "../styles/helpers.scss";
+
 .projects-slider {
   margin-top: 20px;
+
+  h4 {
+    color: $dark-tangerine;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: $matterhorn;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $dark-tangerine;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 700;
+  }
 }
 
 #carousel {

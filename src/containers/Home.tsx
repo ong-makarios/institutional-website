@@ -26,28 +26,28 @@ const Home: React.FC = () => {
       content:
         "Sint consequat eu ad dolore ipsum non laborum sit labore elit incididunt.",
       readMoreLink: "https://example.com/slide1",
-      image: "https://via.placeholder.com/300x200",
+      image: "https://via.placeholder.com/350x262",
     },
     {
       title: "Excepteur veniam.",
       content:
         "Deserunt est occaecat enim sunt nostrud. Sint dolor ut et incididunt.",
       readMoreLink: "https://example.com/slide2",
-      image: "https://via.placeholder.com/300x200",
+      image: "https://via.placeholder.com/350x262",
     },
     {
       title: "Mollit consectetur cillum.",
       content:
         "Magna laborum quis et reprehenderit ut fugiat est qui et ad exercitation.",
       readMoreLink: "https://example.com/slide3",
-      image: "https://via.placeholder.com/300x200",
+      image: "https://via.placeholder.com/350x262",
     },
     {
       title: "Cillum duis exercitation.",
       content:
         "Sit voluptate esse minim fugiat esse et excepteur enim dolore ea mollit.",
       readMoreLink: "https://example.com/slide4",
-      image: "https://via.placeholder.com/300x200",
+      image: "https://via.placeholder.com/350x262",
     },
   ];
   const projectsSliderSettings: Settings = {
